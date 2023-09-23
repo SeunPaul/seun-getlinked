@@ -22,7 +22,10 @@ function MobileNavigation({ page, show }) {
               {item.label}
             </Link>
           ))}
-          <Link className="flex h-[53px] w-[172px] items-center justify-center rounded-[4px] bg-button text-white">
+          <Link
+            to="/register"
+            className="flex h-[53px] w-[172px] items-center justify-center rounded-[4px] bg-button text-white"
+          >
             Register
           </Link>
         </ul>

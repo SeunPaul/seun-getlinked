@@ -256,7 +256,10 @@ function Home() {
               Introduction to getlinked <br />
               <span className="text-purple">tech Hackathon 1.0</span>
             </h3>
-            <p className="mt-5 w-full text-center text-[13px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[515px]">
+            <p
+              data-aos="fade-up"
+              className="mt-5 w-full text-center text-[13px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[515px]"
+            >
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as clear as day: to shape the future. Whether you're a
               coding genius, a design maverick, or a concept wizard, you'll have
@@ -278,12 +281,18 @@ function Home() {
             alt=""
           />
           <div className="text-center vs:text-start">
-            <h3 className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+            <h3
+              data-aos="fade-up"
+              className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]"
+            >
               Rules and
               <br />
               <span className="text-purple">Guidelines</span>
             </h3>
-            <p className="mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[515px]">
+            <p
+              data-aos="fade-up"
+              className="mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[515px]"
+            >
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as clear as day: to shape the future. Whether you're a
               coding genius, a design maverick, or a concept wizard, you'll have
@@ -305,37 +314,40 @@ function Home() {
             alt=""
           />
           <div className="mt-0 vs:mt-4">
-            <h3 className="text-center font-clash text-[20px] font-bold leading-[30px] text-white  vs:text-start vs:text-[32px] vs:leading-[42px]">
+            <h3
+              data-aos="fade-up"
+              className="text-center font-clash text-[20px] font-bold leading-[30px] text-white  vs:text-start vs:text-[32px] vs:leading-[42px]"
+            >
               Judging Criteria <br />
               <span className="text-purple">Key attributes</span>
             </h3>
             <div className="w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm sm:w-[515px]">
-              <p className="mt-5">
+              <p data-aos="fade-up" className="mt-5">
                 <span className="text-pink2">Innovation and Creativity</span>:
                 Evaluate the uniqueness and creativity of the solution. Consider
                 whether it addresses a real-world problem in a novel way or
                 introduces innovative features.
               </p>
-              <p className="mt-5">
+              <p data-aos="fade-up" className="mt-5">
                 <span className="text-pink2">Functionality:</span> Assess how
                 well the solution works. Does it perform its intended functions
                 effectively and without major issues? Judges would consider the
                 completeness and robustness of the solution.
               </p>
-              <p className="mt-5">
+              <p data-aos="fade-up" className="mt-5">
                 <span className="text-pink2">Impact and Relevance:</span>{" "}
                 Determine the potential impact of the solution in the real
                 world. Does it address a significant problem, and is it relevant
                 to the target audience? Judges would assess the potential
                 social, economic, or environmental benefits.
               </p>
-              <p className="mt-5">
+              <p data-aos="fade-up" className="mt-5">
                 <span className="text-pink2">Technical Complexity:</span>{" "}
                 Evaluate the technical sophistication of the solution. Judges
                 would consider the complexity of the code, the use of advanced
                 technologies or algorithms, and the scalability of the solution.
               </p>
-              <p className="mt-5">
+              <p data-aos="fade-up" className="mt-5">
                 <span className="text-pink2">
                   Adherence to Hackathon Rules:
                 </span>{" "}
@@ -345,7 +357,10 @@ function Home() {
                 competition-specific requirements.v
               </p>
             </div>
-            <p className="mx-auto mt-6 flex h-[53px] w-[172px] cursor-pointer items-center justify-center rounded-[4px] bg-button text-white vs:mx-0 vs:mt-14">
+            <p
+              data-aos="fade-up"
+              className="mx-auto mt-6 flex h-[53px] w-[172px] cursor-pointer items-center justify-center rounded-[4px] bg-button text-white vs:mx-0 vs:mt-14"
+            >
               Read More
             </p>
           </div>
@@ -356,16 +371,22 @@ function Home() {
       <div className="border-b border-b-[#FFFFFF2E] pb-10 pt-10">
         <SectionWrapper className="flex flex-wrap items-center  justify-center gap-5">
           <div className="w-full sm:w-[515px]">
-            <h3 className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+            <h3
+              data-aos="fade-up"
+              className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]"
+            >
               Frequently Ask
               <br />
               <span className="text-purple">Question</span>
             </h3>
-            <p className="mt-5 w-full text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[515px]">
+            <p
+              data-aos="fade-up"
+              className="mt-5 w-full text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[515px]"
+            >
               We got answers to the questions that you might want to ask about
               getlinked Hackathon 1.0
             </p>
-            <div className="mt-16 text-white">
+            <div data-aos="fade-up" className="mt-16 text-white">
               {faqs.map((fa) => (
                 <div
                   key={fa.id}
@@ -398,10 +419,16 @@ function Home() {
       {/* Timelines */}
       <div className="pb-20 pt-20">
         <SectionWrapper className="">
-          <h3 className="text-center font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+          <h3
+            data-aos="fade-up"
+            className="text-center font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]"
+          >
             Timeline
           </h3>
-          <p className="mx-auto mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:w-[425px] vs:text-sm vs:leading-[30px]">
+          <p
+            data-aos="fade-up"
+            className="mx-auto mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:w-[425px] vs:text-sm vs:leading-[30px]"
+          >
             Here is the breakdown of the time we anticipate using for the
             upcoming event.
           </p>
@@ -415,12 +442,18 @@ function Home() {
       <div className="pb-20 pt-10">
         <SectionWrapper>
           <div className="w-full text-center vs:text-start sm:w-[550px] lg:ml-auto">
-            <h3 className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+            <h3
+              data-aos="fade-up"
+              className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]"
+            >
               Prizes and
               <br />
               <span className="text-purple">Rewards</span>
             </h3>
-            <p className="mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[400px]">
+            <p
+              data-aos="fade-up"
+              className="mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[400px]"
+            >
               Highlight of the prizes or rewards for winners and for
               participants.
             </p>
@@ -443,14 +476,23 @@ function Home() {
       {/* Partners and Sponsors */}
       <div className="border-b border-b-[#FFFFFF2E] pb-20 pt-20">
         <SectionWrapper className="">
-          <h3 className="text-center font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+          <h3
+            data-aos="fade-up"
+            className="text-center font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]"
+          >
             Partners and Sponsors
           </h3>
-          <p className="mx-auto mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:w-[425px] vs:text-sm vs:leading-[30px]">
+          <p
+            data-aos="fade-up"
+            className="mx-auto mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:w-[425px] vs:text-sm vs:leading-[30px]"
+          >
             Getlinked Hackathon 1.0 is honored to have the following major
             companies as its partners and sponsors
           </p>
-          <div className="mt-4 rounded-[5px] border border-purple px-8 py-10 vs:mt-20 vs:px-28 vs:py-32">
+          <div
+            data-aos="fade-up"
+            className="mt-4 rounded-[5px] border border-purple px-8 py-10 vs:mt-20 vs:px-28 vs:py-32"
+          >
             <img src={partners} alt="" className="mx-auto " />
           </div>
         </SectionWrapper>
@@ -460,19 +502,31 @@ function Home() {
       <div className="pb-10 pt-10">
         <SectionWrapper className="flex flex-wrap items-center  justify-center gap-5">
           <div className="text-center vs:text-start">
-            <h3 className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+            <h3
+              data-aos="fade-up"
+              className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]"
+            >
               Privacy Policy and
               <br />
               <span className="text-purple">Terms</span>
             </h3>
-            <p className="text-[12px] text-[#FFFFFFBF] vs:text-sm">
+            <p
+              data-aos="fade-up"
+              className="text-[12px] text-[#FFFFFFBF] vs:text-sm"
+            >
               Last updated on September 12, 2023
             </p>
-            <p className="mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[438px]">
+            <p
+              data-aos="fade-up"
+              className="mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[438px]"
+            >
               Below are our privacy & policy, which outline a lot of goodies.
               it's our aim to always take of our participant
             </p>
-            <div className="mt-16 w-full rounded-[5px] border border-purple bg-[#906b9a1f] px-4 py-10 text-start leading-[27px] text-white vs:w-[450px] vs:px-14 vs:py-14 vs:leading-[30px] xl:w-[569px]">
+            <div
+              data-aos="fade-up"
+              className="mt-16 w-full rounded-[5px] border border-purple bg-[#906b9a1f] px-4 py-10 text-start leading-[27px] text-white vs:w-[450px] vs:px-14 vs:py-14 vs:leading-[30px] xl:w-[569px]"
+            >
               <p className="vs:text[14px] text-center text-[12px] vs:text-start ">
                 At getlinked tech Hackathon 1.0, we value your privacy and are
                 committed to protecting your personal information. This Privacy
