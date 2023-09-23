@@ -76,7 +76,7 @@ function Register() {
           alt=""
         />
         <div className="relative z-10 text-white">
-          <img className="w-[300px] lg:w-[700px]" src={reg} />
+          <img className="animate-floating w-[300px] lg:w-[700px]" src={reg} />
         </div>
         <div className="rounded-[8px] px-1 py-12 vs:px-10 lg:bg-[#906b9a1f]">
           <h3 className="mb-2 w-full text-[32px] font-semibold text-purple vs:w-[350px]">

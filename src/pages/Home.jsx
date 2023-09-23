@@ -248,7 +248,11 @@ function Home() {
       {/* Overview */}
       <div className="border-b border-b-[#FFFFFF2E] pb-20 pt-10">
         <SectionWrapper className="flex flex-wrap items-center justify-center gap-20">
-          <img src={tbi} alt="" className="w-[264px] vs:w-[300px] xl:w-auto" />
+          <img
+            src={tbi}
+            alt=""
+            className="animate-floating w-[264px] vs:w-[300px] xl:w-auto "
+          />
           <div className="mt-0 text-center vs:mt-10 vs:text-start">
             <h3
               data-aos="fade-up"
@@ -278,7 +282,7 @@ function Home() {
         <SectionWrapper className="flex flex-row-reverse flex-wrap items-center  justify-center gap-5">
           <img
             src={rules}
-            className="w-[294px] vs:w-[360px] xl:w-auto"
+            className="animate-floating w-[294px] vs:w-[360px] xl:w-auto"
             alt=""
           />
           <div className="text-center vs:text-start">
@@ -310,7 +314,7 @@ function Home() {
       <div className="border-b border-b-[#FFFFFF2E] pb-20 pt-10">
         <SectionWrapper className="flex flex-wrap items-center justify-center gap-0 vs:gap-10">
           <img
-            className="mt-0 w-[332px] vs:w-[340px] xl:mt-64 xl:w-[680px]"
+            className="animate-floating mt-0 w-[332px] vs:w-[340px] xl:mt-64 xl:w-[680px]"
             src={criteria}
             alt=""
           />
@@ -413,7 +417,11 @@ function Home() {
               ))}
             </div>
           </div>
-          <img src={faq} className="w-[294px] vs:w-[360px] xl:w-auto" alt="" />
+          <img
+            src={faq}
+            className="animate-floating w-[294px] vs:w-[360px] xl:w-auto"
+            alt=""
+          />
         </SectionWrapper>
       </div>
 
@@ -463,7 +471,7 @@ function Home() {
           <div className="flex flex-wrap items-end  justify-center gap-5">
             <img
               src={trophy}
-              className="w-[294px] vs:w-[360px] xl:w-[540px]"
+              className="animate-floating w-[294px] vs:w-[360px] xl:w-[540px]"
               alt=""
             />
             <img
@@ -568,7 +576,7 @@ function Home() {
           </div>
           <img
             src={privacy}
-            className="w-[294px] vs:w-[360px] xl:w-auto"
+            className="animate-floating w-[294px] vs:w-[360px] xl:w-auto"
             alt=""
           />
         </SectionWrapper>

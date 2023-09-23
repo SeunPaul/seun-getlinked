@@ -45,12 +45,12 @@ export default {
         text: "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
         button:
           "linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)",
-        
       },
       animation: {
         "spin-slow": "spin 15s linear infinite",
         bigpulse: "flash 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         typing: "typing 2s linear",
+        floating: "floating 3s infinite ease-in-out",
       },
       keyframes: {
         flash: {
@@ -70,10 +70,15 @@ export default {
             width: "100%",
           },
         },
+        floating: {
+          "0%": { transform: "translate(0,  0px)" },
+          "50%": { transform: "translate(0, 35px)" },
+          "100%": { transform: "translate(0, -0px)" },
+        },
       },
       transitionProperty: {
-        'height': 'height',
-      }
+        height: "height",
+      },
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
