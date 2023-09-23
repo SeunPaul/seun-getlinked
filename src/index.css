@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "clash";
+  src: url("./assets/font/ClashDisplay-Bold.otf");
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }

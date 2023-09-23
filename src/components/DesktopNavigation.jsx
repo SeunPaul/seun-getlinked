@@ -27,7 +27,7 @@ function DesktopNavigation({ page }) {
       <SectionWrapper className="flex items-center justify-between pb-5 pt-12">
         <>
           <Link to="/">
-            <h3 className="text-[15px] font-bold text-white md:text-4xl">
+            <h3 className="text-[15px] font-bold text-white md:text-4xl font-clash">
               get<span className="text-purple">linked</span>
             </h3>
           </Link>
@@ -35,11 +35,11 @@ function DesktopNavigation({ page }) {
           <div className="z-20 cursor-pointer md:hidden">
             {showMobileNav ? (
               <div className="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-button">
-                <div className="h-[26px] w-[26px] rounded-full bg-dark p-2">
+                <div className="h-[26px] w-[26px] rounded-full bg-dark p-2"
+                    onClick={() => setShowMobileNav(false)}>
                   <img
                     src={close}
                     alt=""
-                    onClick={() => setShowMobileNav(false)}
                   />
                 </div>
               </div>

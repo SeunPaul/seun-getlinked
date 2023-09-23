@@ -5,8 +5,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      xs: "350px",
+      fold: "350px",
       // => @media (min-width: 350px) { ... }
+
+      xs: "390px",
+      // => @media (min-width: 359px) { ... }
 
       vs: "460px",
       // => @media (min-width: 460px) { ... }
@@ -28,6 +31,7 @@ export default {
         inter: ['"Inter", sans-serif', ...defaultTheme.fontFamily.sans],
         mont: ['"Montserrat", sans-serif', ...defaultTheme.fontFamily.sans],
         unica: ['"Unica One", cursive', ...defaultTheme.fontFamily.sans],
+        clash: ['"Clash Display", sans-serif', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         dark: "#150E28",
@@ -45,7 +49,6 @@ export default {
         "spin-slow": "spin 15s linear infinite",
         bigpulse: "flash 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         typing: "typing 2s linear",
-        appear: "appear 3s linear 2s",
       },
       keyframes: {
         flash: {
@@ -63,14 +66,6 @@ export default {
           },
           "100%": {
             width: "100%",
-          },
-        },
-        appear: {
-          "0%": {
-            opacity: 0,
-          },
-          "100%": {
-            opacity: 1,
           },
         },
       },
