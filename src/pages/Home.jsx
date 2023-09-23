@@ -11,6 +11,7 @@ import glowing_sphere from "../assets/png/glowing_sphere.png";
 import metrix from "../assets/png/metrix.png";
 import star from "../assets/png/star.png";
 import hpl from "../assets/png/hero-purple-left.png";
+import tbi from "../assets/png/The big idea.png"
 
 function Home() {
   const [intervalId, setIntervalId] = useState();
@@ -146,21 +147,91 @@ function Home() {
       </div>
 
       {/* Overview */}
-      <div>
-        <SectionWrapper>
-          <div></div>
-          <div>
-            <h3>
+      <div className="pt-10 pb-20 border-b border-b-[#FFFFFF2E]">
+        <SectionWrapper className="flex flex-wrap justify-center items-center gap-20">
+          <img src={tbi} alt=""/>
+          <div className="w-1/2 mt-10">
+            <h3 data-aos="fade-up" className="text-white text-[32px] font-bold font-clash leading-[42px]">
               Introduction to getlinked <br />
               <span className="text-purple">tech Hackathon 1.0</span>
             </h3>
+            <p className="text-white w-[535px] text-sm mt-5 leading-[27px] text-center vs:text-left">
+                Our tech hackathon is a melting pot of visionaries, and its purpose is as
+                clear as day: to shape the future. Whether you're a coding genius, a 
+                design maverick, or a concept wizard, you'll have the chance to transform 
+                your ideas into reality. Solving real-world problems, pushing the boundaries
+                of technology, and creating solutions that can change the world,
+                that's what we're all about!
+              </p>
           </div>
         </SectionWrapper>
       </div>
 
       {/* Rules and Guidelines */}
+      <div className="pt-10 pb-10 border-b border-b-[#FFFFFF2E]">
+        <SectionWrapper className="flex flex-wrap flex-row-reverse justify-center  items-center gap-5">
+          <img src={tbi} alt=""/>
+          <div className="w-1/2 mt-10">
+            <h3 className="text-white text-[32px] font-bold font-clash leading-[42px]">
+              Rules and<br />
+              <span className="text-purple">Guidelines</span>
+            </h3>
+            <p className="text-white w-[535px] text-sm mt-5 leading-[27px] text-center vs:text-left">
+                Our tech hackathon is a melting pot of visionaries, and its purpose is as
+                clear as day: to shape the future. Whether you're a coding genius, a 
+                design maverick, or a concept wizard, you'll have the chance to transform 
+                your ideas into reality. Solving real-world problems, pushing the boundaries
+                of technology, and creating solutions that can change the world,
+                that's what we're all about!
+              </p>
+          </div>
+        </SectionWrapper>
+      </div>
 
       {/* Judging Criteria */}
+      <div className="pt-10 pb-20 border-b border-b-[#FFFFFF2E]">
+        <SectionWrapper className="flex flex-wrap justify-center items-center gap-20">
+          <img src={tbi} alt=""/>
+          <div className="w-1/2 mt-10">
+            <h3 className="text-white text-[32px] font-bold font-clash leading-[42px]">
+              Judging Criteria <br />
+              <span className="text-purple">Key attributes</span>
+            </h3>
+            <p className="text-white w-[535px] text-sm mt-5 leading-[27px] text-center vs:text-left">
+              <span className="text-pink2">Innovation and Creativity</span>: Evaluate the uniqueness and creativity of the
+              solution. Consider whether it addresses a real-world problem in a novel 
+              way or introduces innovative features.
+            </p>
+            <p className="text-white w-[535px] text-sm mt-5 leading-[27px] text-center vs:text-left">
+              <span className="text-pink2">Functionality:</span> Assess how well the solution works. Does it perform its 
+              intended functions effectively and without major issues? Judges would
+              consider the completeness and robustness of the solution.
+              </p>
+            <p className="text-white w-[535px] text-sm mt-5 leading-[27px] text-center vs:text-left">
+              <span className="text-pink2">Impact and Relevance:</span> Determine the potential impact of the solution 
+              in the real world. Does it address a significant problem, and is it relevant 
+              to the target audience? Judges would assess the potential social, 
+              economic, or environmental benefits.
+            </p>
+            <p className="text-white w-[535px] text-sm mt-5 leading-[27px] text-center vs:text-left">
+              <span className="text-pink2">Technical Complexity:</span> Evaluate the technical sophistication of the solution. 
+              Judges would consider the complexity of the code, the use of advanced 
+              technologies or algorithms, and the scalability of the solution.
+            </p>
+            <p className="text-white w-[535px] text-sm mt-5 leading-[27px] text-center vs:text-left">
+              <span className="text-pink2">Adherence to Hackathon Rules:</span> Judges will Ensure that the team adhered 
+              to the rules and guidelines of the hackathon, including deadlines, use of 
+              specific technologies or APIs, and any other competition-specific requirements.v
+            </p>
+            <Link
+              to="/register"
+              className="mt-6 vs:mt-14 mx-auto vs:mx-0 flex h-[53px] w-[172px] items-center justify-center rounded-[4px] bg-button text-white"
+            >
+              Register
+            </Link>
+          </div>
+        </SectionWrapper>
+      </div>
 
       {/* FAQs */}
 
