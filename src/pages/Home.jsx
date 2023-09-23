@@ -15,6 +15,7 @@ import tbi from "../assets/png/The big idea.png";
 import rules from "../assets/png/rules.png";
 import criteria from "../assets/png/criteria.png";
 import faq from "../assets/png/faq.png";
+import timeline from "../assets/png/Timeline.png";
 import trophy from "../assets/png/trophy.png";
 import prizes from "../assets/png/prizes.png";
 import green_check from "../assets/png/green_check.png";
@@ -41,7 +42,7 @@ function Home() {
     },
     {
       id: 2,
-      show: true,
+      show: false,
       question: "What happens if I need help during the hackathon?",
       answer:
         "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
@@ -395,6 +396,20 @@ function Home() {
       </div>
 
       {/* Timelines */}
+      <div className="pb-20 pt-20">
+        <SectionWrapper className="">
+          <h3 className="text-center font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+            Timeline
+          </h3>
+          <p className="mx-auto mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:w-[425px] vs:text-sm vs:leading-[30px]">
+            Here is the breakdown of the time we anticipate using for the
+            upcoming event.
+          </p>
+          <div className="mt-4 rounded-[5px] border border-purple px-8 py-10 vs:mt-20 vs:px-28 vs:py-32">
+            <img src={timeline} alt="" className="mx-auto " />
+          </div>
+        </SectionWrapper>
+      </div>
 
       {/* Prizes and Rewards */}
       <div className="pb-20 pt-10">

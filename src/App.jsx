@@ -8,7 +8,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-dark">
+    <div className="min-h-screen bg-dark">
       <Router />
     </div>
   );

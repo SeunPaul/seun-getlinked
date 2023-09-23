@@ -47,6 +47,16 @@ function Footer({ page }) {
                   {item.label}
                 </Link>
               ))}
+              <Link
+                to="/register"
+                className={`mb-4 cursor-pointer bg-clip-text text-[12px] font-normal transition duration-300 ease-in-out hover:bg-text hover:text-transparent ${
+                  page === "register"
+                    ? "bg-text text-transparent"
+                    : "text-white"
+                }`}
+              >
+                register
+              </Link>
             </div>
             <div className="flex items-center gap-4">
               <p className="text-[14px] text-purple">Follow us</p>
