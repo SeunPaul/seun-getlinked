@@ -11,7 +11,10 @@ import glowing_sphere from "../assets/png/glowing_sphere.png";
 import metrix from "../assets/png/metrix.png";
 import star from "../assets/png/star.png";
 import hpl from "../assets/png/hero-purple-left.png";
-import tbi from "../assets/png/The big idea.png"
+import tbi from "../assets/png/The big idea.png";
+import rules from "../assets/png/rules.png";
+import criteria from "../assets/png/criteria.png";
+
 
 function Home() {
   const [intervalId, setIntervalId] = useState();
@@ -170,7 +173,7 @@ function Home() {
       {/* Rules and Guidelines */}
       <div className="pt-10 pb-10 border-b border-b-[#FFFFFF2E]">
         <SectionWrapper className="flex flex-wrap flex-row-reverse justify-center  items-center gap-5">
-          <img src={tbi} alt=""/>
+          <img src={rules} alt=""/>
           <div className="w-1/2 mt-10">
             <h3 className="text-white text-[32px] font-bold font-clash leading-[42px]">
               Rules and<br />
@@ -191,7 +194,7 @@ function Home() {
       {/* Judging Criteria */}
       <div className="pt-10 pb-20 border-b border-b-[#FFFFFF2E]">
         <SectionWrapper className="flex flex-wrap justify-center items-center gap-20">
-          <img src={tbi} alt=""/>
+          <img src={criteria} alt=""/>
           <div className="w-1/2 mt-10">
             <h3 className="text-white text-[32px] font-bold font-clash leading-[42px]">
               Judging Criteria <br />
