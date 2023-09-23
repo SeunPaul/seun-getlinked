@@ -31,7 +31,11 @@ function DesktopNavigation({ page }) {
               get<span className="text-purple">linked</span>
             </h3>
           </Link>
-          <MobileNavigation page={page} show={showMobileNav} />
+          <MobileNavigation
+            page={page}
+            show={showMobileNav}
+            setShowMobileNav={setShowMobileNav}
+          />
           <div className="z-20 cursor-pointer md:hidden">
             {showMobileNav ? (
               <div className="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-button">
@@ -64,7 +68,13 @@ function DesktopNavigation({ page }) {
               to="/register"
               className="ml-2 flex h-[53px] w-[172px] items-center justify-center rounded-[4px] bg-button text-white lg:ml-14"
             >
-              Register
+              <div
+                className={`flex h-[50px] w-[169px] items-center justify-center ${
+                  page === "register" ? "bg-dark" : "bg-transparent"
+                }`}
+              >
+                Register
+              </div>
             </Link>
           </div>
         </>
