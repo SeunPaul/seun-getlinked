@@ -16,6 +16,9 @@ import rules from "../assets/png/rules.png";
 import criteria from "../assets/png/criteria.png";
 import trophy from "../assets/png/trophy.png";
 import prizes from "../assets/png/prizes.png";
+import green_check from "../assets/png/green_check.png";
+import privacy from "../assets/png/privacy.png";
+import partners from "../assets/png/partners.png";
 
 function Home() {
   const [intervalId, setIntervalId] = useState();
@@ -222,7 +225,7 @@ function Home() {
               <br />
               <span className="text-purple">Guidelines</span>
             </h3>
-            <p className="mt-5 w-full text-center text-[13px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[515px]">
+            <p className="mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[515px]">
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as clear as day: to shape the future. Whether you're a
               coding genius, a design maverick, or a concept wizard, you'll have
@@ -243,12 +246,12 @@ function Home() {
             src={criteria}
             alt=""
           />
-          <div className="mt-0 vs:mt-10">
+          <div className="mt-0 vs:mt-4">
             <h3 className="text-center font-clash text-[20px] font-bold leading-[30px] text-white  vs:text-start vs:text-[32px] vs:leading-[42px]">
               Judging Criteria <br />
               <span className="text-purple">Key attributes</span>
             </h3>
-            <div className="w-full text-center text-sm leading-[27px] text-white vs:text-left sm:w-[515px]">
+            <div className="w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm sm:w-[515px]">
               <p className="mt-5">
                 <span className="text-pink2">Innovation and Creativity</span>:
                 Evaluate the uniqueness and creativity of the solution. Consider
@@ -296,15 +299,15 @@ function Home() {
       {/* Timelines */}
 
       {/* Prizes and Rewards */}
-      <div className="border-b border-b-[#FFFFFF2E] pb-10 pt-10">
+      <div className="pb-20 pt-10">
         <SectionWrapper>
-          <div className="w-full text-center vs:text-start sm:w-[400px] lg:ml-auto">
+          <div className="w-full text-center vs:text-start sm:w-[550px] lg:ml-auto">
             <h3 className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
               Prizes and
               <br />
               <span className="text-purple">Rewards</span>
             </h3>
-            <p className="mt-5 text-center text-[13px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px]">
+            <p className="mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[400px]">
               Highlight of the prizes or rewards for winners and for
               participants.
             </p>
@@ -325,9 +328,82 @@ function Home() {
       </div>
 
       {/* Partners and Sponsors */}
+      <div className="border-b border-b-[#FFFFFF2E] pb-20 pt-20">
+        <SectionWrapper className="">
+          <h3 className="text-center font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+            Partners and Sponsors
+          </h3>
+          <p className="mx-auto mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:w-[425px] vs:text-sm vs:leading-[30px]">
+            Getlinked Hackathon 1.0 is honored to have the following major
+            companies as its partners and sponsors
+          </p>
+          <div className="mt-4 rounded-[5px] border border-purple px-8 py-10 vs:mt-20 vs:px-28 vs:py-32">
+            <img src={partners} alt="" className="mx-auto " />
+          </div>
+        </SectionWrapper>
+      </div>
 
       {/* Privacy Policy and terms */}
-
+      <div className="border-b border-b-[#FFFFFF2E] pb-10 pt-10">
+        <SectionWrapper className="flex flex-wrap items-center  justify-center gap-5">
+          <div className="text-center vs:text-start">
+            <h3 className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+              Privacy Policy and
+              <br />
+              <span className="text-purple">Terms</span>
+            </h3>
+            <p className="text-[12px] text-[#FFFFFFBF] vs:text-sm">
+              Last updated on September 12, 2023
+            </p>
+            <p className="mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[438px]">
+              Below are our privacy & policy, which outline a lot of goodies.
+              it's our aim to always take of our participant
+            </p>
+            <div className="mt-16 w-full rounded-[5px] border border-purple bg-[#906b9a1f] px-4 py-10 text-start leading-[27px] text-white vs:w-[450px] vs:px-14 vs:py-14 vs:leading-[30px] xl:w-[569px]">
+              <p className="vs:text[14px] text-center text-[12px] vs:text-start ">
+                At getlinked tech Hackathon 1.0, we value your privacy and are
+                committed to protecting your personal information. This Privacy
+                Policy outlines how we collect, use, disclose, and safeguard
+                your data when you participate in our tech hackathon event. By
+                participating in our event, you consent to the practices
+                described in this policy.
+              </p>
+              <p className="mt-4 text-[13px] text-purple vs:text-[16px]">
+                Licensing Policy
+              </p>
+              <p className="vs:text[14px] text-[12px]">
+                Here are terms of our Standard License:
+              </p>
+              <div className="mt-4 flex gap-2 leading-[27px]">
+                <div>
+                  <img src={green_check} alt="" className="mt-2 w-4" />
+                </div>
+                <p className="vs:text[14px] text-[12px]">
+                  The Standard License grants you a non-exclusive right to
+                  navigate and register for our event
+                </p>
+              </div>
+              <div className="mt-4 flex gap-2 leading-[27px]">
+                <div>
+                  <img src={green_check} alt="" className="mt-2" />
+                </div>
+                <p className="vs:text[14px] text-[12px]">
+                  You are licensed to use the item available at any free source
+                  sites, for your project developement
+                </p>
+              </div>
+              <p className="mx-auto mt-6 flex h-[53px] w-[172px] cursor-pointer items-center justify-center rounded-[4px] bg-button text-white">
+                Read More
+              </p>
+            </div>
+          </div>
+          <img
+            src={privacy}
+            className="w-[294px] vs:w-[360px] xl:w-auto"
+            alt=""
+          />
+        </SectionWrapper>
+      </div>
       {/* Footer */}
     </div>
   );

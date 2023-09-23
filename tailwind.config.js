@@ -44,6 +44,7 @@ export default {
         text: "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
         button:
           "linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)",
+        
       },
       animation: {
         "spin-slow": "spin 15s linear infinite",
