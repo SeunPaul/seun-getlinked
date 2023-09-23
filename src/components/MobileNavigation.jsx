@@ -5,7 +5,7 @@ import { SectionWrapper } from "./StyledComponents";
 function MobileNavigation({ page, show }) {
   return (
     <div
-      className={`fixed left-0 ${
+      className={`fixed left-0 border-b border-b-[#FFFFFF2E] ${
         show ? "top-0 opacity-100" : "-top-96 opacity-0"
       } z-10 h-96 w-full bg-dark pt-24 transition-all duration-200 md:hidden`}
     >
@@ -15,7 +15,7 @@ function MobileNavigation({ page, show }) {
             <Link
               to={item.url}
               key={item.value}
-              className={`font-inter mb-5 cursor-pointer bg-clip-text text-lg font-medium transition duration-300 ease-in-out hover:bg-text hover:text-transparent ${
+              className={`mb-5 cursor-pointer bg-clip-text font-inter text-lg font-medium transition duration-300 ease-in-out hover:bg-text hover:text-transparent ${
                 page === item.value ? "bg-text text-transparent" : "text-white"
               }`}
             >
