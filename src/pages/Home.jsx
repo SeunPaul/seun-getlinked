@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import DesktopNavigation from "../components/DesktopNavigation";
 import { SectionWrapper } from "../components/StyledComponents";
@@ -32,6 +32,10 @@ function Home() {
 
   const location = useLocation();
   const page = location.pathname.split("/")[1];
+
+  const tRef = useRef(null);
+  const oRef = useRef(null);
+  const fRef = useRef(null);
 
   const [faqs, setFaqs] = useState([
     {
@@ -123,6 +127,18 @@ function Home() {
 
     // eslint-disable-next-line
   }, [intervalId]);
+
+  useEffect(() => {
+    if (page === "timeline") {
+      tRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    if (page === "overview") {
+      oRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    if (page === "faqs") {
+      fRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [page]);
 
   return (
     <div className="overflow-hidden pt-[91px] md:pt-[121px]">
@@ -246,7 +262,7 @@ function Home() {
       </div>
 
       {/* Overview */}
-      <div className="border-b border-b-[#FFFFFF2E] pb-20 pt-10">
+      <div ref={oRef} className="border-b border-b-[#FFFFFF2E] pb-20 pt-10">
         <SectionWrapper className="flex flex-wrap items-center justify-center gap-20">
           <img
             src={tbi}
@@ -373,7 +389,7 @@ function Home() {
       </div>
 
       {/* FAQs */}
-      <div className="border-b border-b-[#FFFFFF2E] pb-10 pt-10">
+      <div ref={fRef} className="border-b border-b-[#FFFFFF2E] pb-10 pt-10">
         <SectionWrapper className="flex flex-wrap items-center  justify-center gap-5">
           <div className="w-full sm:w-[515px]">
             <h3
@@ -426,7 +442,7 @@ function Home() {
       </div>
 
       {/* Timelines */}
-      <div className="pb-20 pt-20">
+      <div ref={tRef} className="pb-20 pt-20">
         <SectionWrapper className="">
           <h3
             data-aos="fade-up"
@@ -581,6 +597,7 @@ function Home() {
           />
         </SectionWrapper>
       </div>
+
       {/* Footer */}
       <Footer page={page || "home"} />
     </div>
