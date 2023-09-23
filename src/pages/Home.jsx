@@ -16,6 +16,7 @@ import rules from "../assets/png/rules.png";
 import criteria from "../assets/png/criteria.png";
 import faq from "../assets/png/faq.png";
 import timeline from "../assets/png/Timeline.png";
+import timelineM from "../assets/png/Timeline_mobile.png";
 import trophy from "../assets/png/trophy.png";
 import prizes from "../assets/png/prizes.png";
 import green_check from "../assets/png/green_check.png";
@@ -427,13 +428,14 @@ function Home() {
           </h3>
           <p
             data-aos="fade-up"
-            className="mx-auto mt-5 w-full text-center text-[12px] leading-[27px] text-white vs:w-[425px] vs:text-sm vs:leading-[30px]"
+            className="mx-auto mt-5 w-full text-center text-[12px] leading-[27px] text-white xs:w-[300px] vs:w-[425px] vs:text-sm vs:leading-[30px]"
           >
             Here is the breakdown of the time we anticipate using for the
             upcoming event.
           </p>
-          <div className="mt-4 rounded-[5px] border border-purple px-8 py-10 vs:mt-20 vs:px-28 vs:py-32">
-            <img src={timeline} alt="" className="mx-auto " />
+          <div className="rounded-[5px] px-8 py-10 vs:px-28 vs:py-16">
+            <img src={timeline} alt="" className="mx-auto hidden md:block " />
+            <img src={timelineM} alt="" className="mx-auto md:hidden " />
           </div>
         </SectionWrapper>
       </div>
