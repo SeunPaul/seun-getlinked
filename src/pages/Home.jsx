@@ -14,11 +14,13 @@ import hpl from "../assets/png/hero-purple-left.png";
 import tbi from "../assets/png/The big idea.png";
 import rules from "../assets/png/rules.png";
 import criteria from "../assets/png/criteria.png";
+import faq from "../assets/png/faq.png";
 import trophy from "../assets/png/trophy.png";
 import prizes from "../assets/png/prizes.png";
 import green_check from "../assets/png/green_check.png";
 import privacy from "../assets/png/privacy.png";
 import partners from "../assets/png/partners.png";
+import Footer from "../components/Footer";
 
 function Home() {
   const [intervalId, setIntervalId] = useState();
@@ -28,6 +30,61 @@ function Home() {
 
   const location = useLocation();
   const page = location.pathname.split("/")[1];
+
+  const [faqs, setFaqs] = useState([
+    {
+      id: 1,
+      show: false,
+      question: "Can I work on a project I started before the hackathon?",
+      answer:
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    },
+    {
+      id: 2,
+      show: true,
+      question: "What happens if I need help during the hackathon?",
+      answer:
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    },
+    {
+      id: 3,
+      show: false,
+      question: "What happens if I don't have an idea for a project?",
+      answer:
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    },
+    {
+      id: 4,
+      show: false,
+      question: "Can I join a team or do I have to come with one?",
+      answer:
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    },
+    {
+      id: 5,
+      show: false,
+      question: "What happens after the hackathon ends",
+      answer:
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    },
+    {
+      id: 6,
+      show: false,
+      question: "Can I work on a project I started before the hackathon?",
+      answer:
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    },
+  ]);
+
+  const toggleFaq = (id) => {
+    setFaqs((prev) => {
+      const newFaqs = prev.map((p) =>
+        p.id === id ? { ...p, show: !p.show } : p
+      );
+
+      return newFaqs;
+    });
+  };
 
   useEffect(() => {
     if (intervalId === undefined) {
@@ -295,6 +352,47 @@ function Home() {
       </div>
 
       {/* FAQs */}
+      <div className="border-b border-b-[#FFFFFF2E] pb-10 pt-10">
+        <SectionWrapper className="flex flex-wrap items-center  justify-center gap-5">
+          <div className="w-full sm:w-[515px]">
+            <h3 className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
+              Frequently Ask
+              <br />
+              <span className="text-purple">Question</span>
+            </h3>
+            <p className="mt-5 w-full text-[12px] leading-[27px] text-white vs:text-left vs:text-sm vs:leading-[30px] sm:w-[515px]">
+              We got answers to the questions that you might want to ask about
+              getlinked Hackathon 1.0
+            </p>
+            <div className="mt-16 text-white">
+              {faqs.map((fa) => (
+                <div
+                  key={fa.id}
+                  className={`mb-6 overflow-hidden border-b border-b-purple pb-2 transition-all ${
+                    fa.show ? "h-34" : "h-10 vs:h-8"
+                  }`}
+                >
+                  <div className="flex justify-between">
+                    <p className="text-[12px] vs:text-[14px]">{fa.question}</p>
+                    <p
+                      className={`cursor-pointer text-[22px] text-purple transition-all ${
+                        fa.show ? "rotate-45" : "rotate-0"
+                      }`}
+                      onClick={() => {
+                        toggleFaq(fa.id);
+                      }}
+                    >
+                      +
+                    </p>
+                  </div>
+                  <p className="mt-1 text-[12px]">{fa.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <img src={faq} className="w-[294px] vs:w-[360px] xl:w-auto" alt="" />
+        </SectionWrapper>
+      </div>
 
       {/* Timelines */}
 
@@ -344,7 +442,7 @@ function Home() {
       </div>
 
       {/* Privacy Policy and terms */}
-      <div className="border-b border-b-[#FFFFFF2E] pb-10 pt-10">
+      <div className="pb-10 pt-10">
         <SectionWrapper className="flex flex-wrap items-center  justify-center gap-5">
           <div className="text-center vs:text-start">
             <h3 className="font-clash text-[20px] font-bold leading-[30px] text-white vs:text-[32px] vs:leading-[42px]">
@@ -405,6 +503,7 @@ function Home() {
         </SectionWrapper>
       </div>
       {/* Footer */}
+      <Footer page={page || "home"} />
     </div>
   );
 }

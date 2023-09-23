@@ -34,6 +34,7 @@ export default {
         clash: ['"Clash Display", sans-serif', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        footerdark: "#100B20",
         dark: "#150E28",
         purple: "#D434FE",
         blue: "#903AFF",
@@ -70,6 +71,9 @@ export default {
           },
         },
       },
+      transitionProperty: {
+        'height': 'height',
+      }
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
